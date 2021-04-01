@@ -3,6 +3,12 @@
 
 using namespace std;
 
+CVect2D::CVect2D()
+{
+	this->flt_x = 15.3;
+	this->flt_y = 11.2;
+}
+
 //constructeur
 CVect2D::CVect2D(float flt_x, float flt_y)
 {
@@ -79,6 +85,51 @@ bool coincideVect2D(const CVect2D& v1, const CVect2D& v2)
 void CVect2D::afficheLog() const
 {
 	cout << "vect2D X :"<< flt_x << "vect2D Y :"<< flt_x << endl;
+}
+
+CVect2D CVect2D::operator=(CVect2D& v1) const
+{
+	CVect2D flt_temp;
+	flt_temp.flt_x = v1.flt_x;
+	flt_temp.flt_y = v1.flt_y;
+
+	return flt_temp;
+}
+
+CVect2D CVect2D::operator+(CVect2D& v1) const
+{
+	CVect2D flt_temp;
+	flt_temp.flt_x = this->flt_x + v1.flt_x;
+	flt_temp.flt_y = this->flt_y + v1.flt_y;
+
+	return flt_temp;
+}
+
+CVect2D CVect2D::operator-(CVect2D& v1) const
+{
+	CVect2D flt_temp;
+	flt_temp.flt_x = this->flt_x - v1.flt_x;
+	flt_temp.flt_y = this->flt_y - v1.flt_y;
+
+	return flt_temp;
+}
+
+CVect2D CVect2D::operator*(CVect2D& v1) const
+{
+	CVect2D flt_temp;
+	flt_temp.flt_x = this->flt_x * v1.flt_x;
+	flt_temp.flt_y = this->flt_y * v1.flt_y;
+
+	return flt_temp;
+}
+
+CVect2D CVect2D::operator/(CVect2D& v1)
+{
+	CVect2D flt_temp;
+	flt_temp.flt_x = this->flt_x / v1.flt_x;
+	flt_temp.flt_y = this->flt_y / v1.flt_y;
+
+	return flt_temp;
 }
 
 

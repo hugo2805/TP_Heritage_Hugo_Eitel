@@ -11,10 +11,11 @@ private:
 	float flt_y;
 
 
+
 public:
 
-	//accessible depuis la classe enfant
-	
+	//Consturcteur
+	CVect2D();
 	CVect2D(float flt_x, float flt_y);
 
 	//Constructeur de copie
@@ -44,6 +45,20 @@ public:
 
 	void afficheLog()const;
 
+	// Surcharge opérateur = 
+	CVect2D operator =(CVect2D& v1)const;
+
+	// Surcharge opérateur + 
+	CVect2D operator +(CVect2D& v1)const;
+
+	// Surcharge opérateur -
+	CVect2D operator -(CVect2D& v1)const;
+
+	// Surcharge opérateur *
+	CVect2D operator *(CVect2D& v1)const;
+
+	// Surcharge opérateur /
+	CVect2D operator /(CVect2D& v1);
 
 
 
