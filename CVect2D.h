@@ -46,7 +46,7 @@ public:
 	void afficheLog()const;
 
 	// Surcharge opérateur = 
-	CVect2D operator =(CVect2D& v1)const;
+	CVect2D operator =(const CVect2D& v1);
 
 	// Surcharge opérateur + 
 	CVect2D operator +(CVect2D& v1)const;

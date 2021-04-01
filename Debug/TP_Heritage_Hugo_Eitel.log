@@ -1,0 +1,13 @@
+﻿  CVect2D.cpp
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect2D.cpp(8,20): warning C4305: '=' : troncation de 'double' à 'float'
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect2D.cpp(9,20): warning C4305: '=' : troncation de 'double' à 'float'
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect2D.cpp(47,16): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+  CVect3D.cpp
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect3D.cpp(53,20): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect3D.cpp(64,29): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect3D.cpp(75,30): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect3D.cpp(87,29): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+D:\Algo\TP_Heritage_Hugo_Eitel\TP_Heritage_Hugo_Eitel\CVect3D.cpp(97,29): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+  main.cpp
+  Génération de code en cours...
+  TP_Heritage_Hugo_Eitel.vcxproj -> D:\Algo\TP_Heritage_Hugo_Eitel\Debug\TP_Heritage_Hugo_Eitel.exe
