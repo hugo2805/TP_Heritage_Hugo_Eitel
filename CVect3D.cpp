@@ -2,21 +2,24 @@
 #include <iostream>
 
 using namespace std;
-
+//Constructeur
 CVect3D::CVect3D(float flt_x, float flt_y, float flt_z):CVect2D(flt_x, flt_y)
 {
 	this->flt_z = flt_z;
 }
 
+//constructeur de copie
 CVect3D::CVect3D(CVect3D& v1) : CVect2D(v1)
 {
 	this->flt_z = v1.flt_z;
 }
 
+//destructeur
 CVect3D::~CVect3D()
 {
 }
 
+//acceseur
 float CVect3D::getZ()
 {
 	return this->flt_z;
@@ -27,12 +30,14 @@ void CVect3D::setZ(float flt_z)
 	this->flt_z = flt_z;
 }
 
+//fonction affiche
 void CVect3D::afficheLog() const
 {
 	CVect2D::afficheLog();
 	cout << " Z: " << this->flt_z << endl;
 }
 
+//surcharge opérateur
 CVect3D CVect3D::operator=(const CVect3D& v1)
 {
 	this->setX(v1.getX());
@@ -87,7 +92,7 @@ CVect3D CVect3D::operator*(CVect3D& v1) const
 }
 
 
-
+//fonction coincide
 bool coincideVect3D(const CVect3D& v1, const CVect3D& v2, const CVect3D& v3)
 {
 	return	v1.getX() == v2.getX() == v3.getX() &&
