@@ -87,6 +87,7 @@ void CVect2D::afficheLog() const
 	cout << "vect2D X :"<< flt_x << "vect2D Y :"<< flt_x << endl;
 }
 
+//opérateur =
 CVect2D CVect2D::operator=(CVect2D& v1) const
 {
 	CVect2D flt_temp;
@@ -96,6 +97,7 @@ CVect2D CVect2D::operator=(CVect2D& v1) const
 	return flt_temp;
 }
 
+//opérateur +
 CVect2D CVect2D::operator+(CVect2D& v1) const
 {
 	CVect2D flt_temp;
@@ -105,6 +107,7 @@ CVect2D CVect2D::operator+(CVect2D& v1) const
 	return flt_temp;
 }
 
+//opérateur -
 CVect2D CVect2D::operator-(CVect2D& v1) const
 {
 	CVect2D flt_temp;
@@ -114,6 +117,7 @@ CVect2D CVect2D::operator-(CVect2D& v1) const
 	return flt_temp;
 }
 
+//opérateur *
 CVect2D CVect2D::operator*(CVect2D& v1) const
 {
 	CVect2D flt_temp;
@@ -123,6 +127,7 @@ CVect2D CVect2D::operator*(CVect2D& v1) const
 	return flt_temp;
 }
 
+//opérateur /
 CVect2D CVect2D::operator/(CVect2D& v1)
 {
 	CVect2D flt_temp;
